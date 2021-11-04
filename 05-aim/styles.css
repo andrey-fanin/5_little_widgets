@@ -100,3 +100,38 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+
+.back-button {
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+  
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.back-button:hover {
+  filter: brightness(.5);
+}
+img {
+  width: 100%;
+}
